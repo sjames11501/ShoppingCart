@@ -1,0 +1,109 @@
+{
+    "categories": [
+     {
+       "id": 1,
+       "name": "Food",
+       "items": [
+         {
+           "id": 1011,
+           "name": "Fish and Chips",
+           "price": "15.0",
+           "description": "Classic Fish and Chips, deep fried cod and Idaho potatoes",
+           "position": 20,
+           "image_url": "https://bypass-items.s3.amazonaws.com/images/0f5d2ddb44382c5d724952a4a90e7401497645f9/original.jpeg",
+           "tax_rates": [
+             {
+               "rate": "0.0625",
+               "label": "Sales Tax"
+             },
+             {
+               "rate": "0.02",
+               "label": "Local Tax"
+             }
+           ]
+         },
+         {
+           "id": 6643,
+           "name": "Nachos",
+           "price": "8.0",
+           "description": "Savory Nachos with cheese and jalapeños",
+           "position": 1,
+           "image_url": "https://bypass-items.s3.amazonaws.com/images/2a0e6713df045b6298262ff29a4c3c121e2b0897/original.jpg",
+           "tax_rates": [
+             {
+               "rate": "0.0625",
+               "label": "Sales Tax"
+             },
+             {
+               "rate": "0.02",
+               "label": "Local Tax"
+             }
+           ]
+         },
+         {
+           "id": 1532,
+           "name": "Al Pastor",
+           "price": "12.0",
+           "description": "The best Al Pastor tacos you'll ever have",
+           "position": 15,
+           "image_url": "https://bypass-items.s3.amazonaws.com/images/6b0d9d46462a9686e06a04e45364af8df45e9576/original.jpeg",
+           "tax_rates": [
+             {
+               "rate": "0.0625",
+               "label": "Sales Tax"
+             },
+             {
+               "rate": "0.02",
+               "label": "Local Tax"
+             }
+           ]
+         }
+       ]
+     },
+     {
+       "id": 2,
+       "name": "Drink",
+       "items": [
+           {
+             "id": 3003,
+             "name": "12oz Coke",
+             "description": "The original Coca-Cola",
+             "position": 105,
+             "price": "4.0",
+             "image_url": "https://bypass-items.s3.amazonaws.com/images/13ceb47f1804bd4cbd334f7d3e129aafc3bc6e37/original.png",
+             "tax_rates": [
+               {
+                 "rate": "0.0625",
+                 "label": "Sales Tax"
+               },
+               {
+                 "rate": "0.02",
+                 "label": "Local Tax"
+               }
+             ]
+           },
+           {
+             "id": 5543,
+             "name": "Dasani Water",
+             "position": 42,
+             "price": "3.00",
+             "image_url": "https://bypass-items.s3.amazonaws.com/images/0b0097c6dcfeeaeb1ba283cf7b791700bfea6d9c/original.png",
+             "tax_rates": [
+               {
+                 "rate": "0.0625",
+                 "label": "Sales Tax"
+               },
+               {
+                 "rate": "0.02",
+                 "label": "Local Tax"
+               },
+               {
+                 "rate": "0.01",
+                 "label": "Plastic Tax"
+               }
+             ]
+           }
+       ]
+     }
+    ]
+   }

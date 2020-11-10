@@ -1,0 +1,31 @@
+<div class="item col-xs-2 col-lg-4 ">
+    <div class="img">
+        <img src={{menuItem.image_url}} />
+
+    </div>
+
+    <div class="header">
+
+        <h3 class="name">{{menuItem.name}}</h3>
+        <span class="price">{{menuItem.price | currency}}</span>
+    </div>
+
+    <div class="actions">
+        <span class="description">{{menuItem.description}}</span>
+        <button *ngIf="ItemInCart" type="button" (click)="updateCartItem()" class="btn btn-primary">Update</button>
+        <button *ngIf="ItemInCart" type="button" (click)="removeFromCart()" class="btn btn-danger">Remove </button>
+        <button *ngIf="!ItemInCart" type="button" (click)="addToCart()" class="btn btn-primary">Add To Cart</button>
+
+    </div>
+
+
+    <select [(ngModel)]="qty">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+
+
+
+</div>

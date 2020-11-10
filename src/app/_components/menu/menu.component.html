@@ -1,0 +1,30 @@
+<div class="container">
+
+    <div *ngIf="NumberOfCartItems">
+    <button  type="button" (click)="checkout()" class="btn btn-primary">Continue to Checkout ({{NumberOfCartItems}} items)   </button>
+
+</div>
+
+
+
+
+
+
+
+<div class="MenuContainer" *ngIf="ShowMenu && StoreMenu">
+    <div *ngFor="let categories of StoreMenu.categories" class="item--wrapper">
+        <h2>{{categories.name}} </h2>
+
+        <div *ngFor="let item of categories.items">
+            <app-menuitem [(inputModel)]=item></app-menuitem>
+        </div>
+
+
+
+    </div>
+
+
+
+
+</div>
+</div>

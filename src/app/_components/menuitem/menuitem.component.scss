@@ -1,0 +1,41 @@
+
+
+.item{
+    float:left;
+    margin-top:1em;
+    min-height:300px;
+
+    select{
+        float: right;
+    width: 18%;
+    height: 36px;
+    }
+    .price{
+        float: right;
+        font-size: 1.2em;
+        line-height: 2em;
+        font-weight: bold;
+        color: #df1717;
+    }
+    .description{
+        clear:left;
+        float:left;
+        width:100%;
+        height:50px;
+    }
+    .btn{width:80%;float:left;}
+    .qty{width:20%;}
+    .img{
+        max-width:100%;
+        img{max-width:100%;}
+    }
+    .header{
+        width:100%;
+        float:left;
+        h3{float:left;    font-weight: 400;        }
+        span{float:right}
+    }
+
+
+}
+

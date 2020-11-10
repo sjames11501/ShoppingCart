@@ -1,0 +1,11 @@
+{
+    "name": "Section 105",
+    "menu_url": "menu.json",
+    "surcharge_configuration": [
+      {
+        "amount": "1.00",
+        "percent": "0.0%",
+        "label": "In-Seat Surcharge"
+      }
+    ]
+  }

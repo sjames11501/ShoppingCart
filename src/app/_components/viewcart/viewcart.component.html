@@ -1,0 +1,75 @@
+<div class="overlay" *ngIf="loading">
+    <div class="loader"></div>
+</div>
+<div class="container" *ngIf="OrderComplete">
+    <h1>Order Complete!</h1>
+    <span>Your order has been submitted. Your credit card ending in 1234 has been charged {{OrderTotal | currency}}.</span>
+</div>
+
+<div class="container" *ngIf="!OrderComplete">
+    <h1>My Cart</h1>
+
+    <div *ngIf="!ShowCart">
+        <h2>Your cart is empty!</h2>
+    </div>
+    <div class="table-container" class="col-lg-7 col-xs-12" *ngIf="ShowCart">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Item Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Line Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of MyCart.CartItems">
+                    <th scope="row">{{item.id}}</th>
+                    <td>{{item.name}}</td>
+                    <td>{{item.price | currency}}</td>
+                    <td>{{item.qty}}</td>
+                    <td>{{item.price * item.qty | currency}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-container" class="col-lg-7 col-xs-12" *ngIf="ShowCart">
+        <h2>Cart Summary</h2>
+        <table class="table">
+
+            <tr>
+                <td>Subtotal</td>
+                <td>{{Subtotal | currency}}</td>
+            </tr>
+
+            <tr *ngFor="let taxtype of TaxTypes">
+                <td>{{taxtype}}</td>
+                <td>{{getTaxTotalByType(taxtype,false) | currency}}</td>
+            </tr>
+
+            <tr *ngFor="let charge of Surecharges">
+                <td>{{charge.label}}</td>
+                <td>{{charge.total | currency}}</td>
+
+            </tr>
+
+            <tr>
+                <td>Order Total</td>
+                <td>{{OrderTotal | currency}}</td>
+
+            </tr>
+
+
+
+        </table>
+    </div>
+    <div class="col-xs-12 col-lg-12" *ngIf="ShowCart">
+
+        <button type="button" (click)="checkout()" class="btn btn-primary">
+            Sumbit Order
+        </button>
+    </div>
+</div>
